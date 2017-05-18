@@ -1,0 +1,5 @@
+{
+    "kty": "oct",
+    "kid": "set_your_key_id",
+    "k": "set_your_key"
+}
