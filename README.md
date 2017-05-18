@@ -1,4 +1,4 @@
-##Django JWT Middleware
+## Django JWT Middleware
  
 
 *Configuration*
