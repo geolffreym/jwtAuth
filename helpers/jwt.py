@@ -51,7 +51,7 @@ def jwk_from(file_read: bytes, read_as: str = 'json') -> AbstractJWKBase:
 def load_file_keys(name, mode='rb') -> bytes:
     # Get absolute path
     here = os.path.dirname(os.path.join(os.path.dirname(__file__), '../../'))
-    abspath = os.path.normpath(os.path.join(here, 'mandm/jwt/keys', name))
+    abspath = os.path.normpath(os.path.join(here, 'keys', name))
     with open(abspath, mode=mode) as fh:
         return fh.read()
 

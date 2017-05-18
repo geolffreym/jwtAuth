@@ -32,8 +32,8 @@ from datetime import datetime
 from jwt.exceptions import JWSEncodeError, JWSDecodeError
 from jwt.jws import JWS
 
-from mandm.jwt import JWTSetting
-from mandm.jwt.helper import load_file_keys, jwk_from
+from jwt import JWTSetting
+from jwt.helpers.jwt import load_file_keys, jwk_from
 
 
 class JWToken(object):

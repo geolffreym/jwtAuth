@@ -2,6 +2,7 @@
  
 
 *Configuration*
+
 Set your settings in the JWTSettings file
 
 Copy the jwtAuth package to the directory of your project or into a folder for utilities and set the following configuration with the relative directories
@@ -37,7 +38,7 @@ ex:
 ```
 from django.contrib.auth.models import User
 from django.views.generic import View
-from jwtAuth.helper import jwt_login
+from jwtAuth.helpers.jwt import jwt_login
 
 class Auth(View):
     """
