@@ -4,7 +4,7 @@ from jwt.jwk import RSAJWK, RSAPrivateKey, AbstractJWKBase
 from jwt.jws import JWS
 
 from JWT import JWToken
-from helper import load_file_keys, jwk_from
+from helpers.jwt import import load_file_keys, jwk_from
 
 
 class TestJWSRSA(TestCase):
