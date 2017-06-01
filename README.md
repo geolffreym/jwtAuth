@@ -72,11 +72,8 @@ class Auth(View):
             if user.check_password(the_password):
                 # Logged
                 # OK
-                return request.responseOk(data={
-                    'token': jwt_login(user),
-                    'user': {
-                        'id': user.pk
-                    }
+                return request.responseOk({
+                    'token': jwt_login(user)
                 })
 
         except User.DoesNotExist:

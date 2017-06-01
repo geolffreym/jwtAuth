@@ -34,6 +34,7 @@ from calendar import timegm
 from datetime import datetime
 # from contextlib import suppress
 from lib.JSON import JSON
+import time
 
 
 class JWTAuthMiddleware(object):
@@ -64,7 +65,8 @@ class JWTAuthMiddleware(object):
                 request.invalid_jwt = True
                 return JSON.render_to_response({
                     'status': 'ERROR',
-                    'data': str(e)
+                    'status_message': str(e),
+                    'timestamp': int(time.time())
                 }, 401)
 
         # Append kwargs
